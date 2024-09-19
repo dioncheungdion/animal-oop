@@ -1,0 +1,21 @@
+public class Animal {
+    public String name;
+    private int noOfLegs;
+    private String noise;
+
+    public Animal(String name, int number, String sound){
+        this.name = name;
+        this.noOfLegs = number;
+        this.noise = sound;
+
+        System.out.printf("Animal object created for %s. This animal has %d legs. It goes %s!\n",this.name, this.noOfLegs,this.noise);
+}
+    public String whatNoise(){
+        return this.noise;
+    }
+
+    public void deformed(){
+        this.noOfLegs ++;
+        System.out.println("This animal was born with an additional leg. It now has " + this.noOfLegs + " legs.");
+    }
+}
