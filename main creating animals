@@ -1,0 +1,11 @@
+public class Main {
+    public static void main(String[] args){
+
+    Animal fish = new Animal ("fish",1000000,"blub");
+    System.out.println(fish.name + " has 4 legs. However...");
+    fish.deformed();
+
+    Animal amoeba = new Animal ("amoeba",2,"GROWL");
+    System.out.println(amoeba.name + " goes " + amoeba.whatNoise());
+
+}}
